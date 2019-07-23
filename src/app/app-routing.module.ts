@@ -3,7 +3,19 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'rosters', pathMatch: 'full' },
-  { path: 'rosters', loadChildren: './rosters/rosters.module#RostersPageModule' },
+  {
+    path: 'rosters',
+    children: [
+      {
+        path: '',
+        loadChildren: './rosters/rosters.module#RostersPageModule'
+      },
+      {
+        path: ':rosterId',
+        loadChildren: './rosters/roster-detail/roster-detail.module#RosterDetailPageModule'
+      }
+    ]
+  },
 ];
 
 @NgModule({

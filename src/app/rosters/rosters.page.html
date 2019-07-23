@@ -1,12 +1,12 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>Rosters</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let roster of rosters">
+    <ion-item *ngFor="let roster of rosters" [routerLink]="['./', roster.id]">
       <ion-avatar slot="start">
         <ion-img [src]="roster.factionImage"></ion-img>
       </ion-avatar>
