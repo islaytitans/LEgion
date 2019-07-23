@@ -31,6 +31,6 @@ export class RosterService {
       ...this.rosters.find(roster => {
         return roster.id === rosterId;
       })
-    }
+    };
   }
 }

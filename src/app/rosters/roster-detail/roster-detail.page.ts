@@ -24,7 +24,7 @@ export class RosterDetailPage implements OnInit {
 
       const rosterId = paramMap.get('rosterId');
       this.roster = this.rosterService.getRoster(+rosterId);
-    })
+    });
   }
 
 }
