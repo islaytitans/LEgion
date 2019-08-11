@@ -4,6 +4,11 @@
       <ion-back-button defaultHref="/rosters"></ion-back-button>
     </ion-buttons>
     <ion-title>{{ roster?.title }}</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="onDeleteRoster()">
+        <ion-icon name="trash" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
