@@ -3,4 +3,5 @@ export interface Roster {
     faction: number;
     factionImage: string;
     title: string;
+    units: string[];
 }

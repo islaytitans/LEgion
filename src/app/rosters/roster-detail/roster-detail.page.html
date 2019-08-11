@@ -20,5 +20,14 @@
         <h2>{{ roster?.faction }}</h2>
       </ion-col>
     </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item *ngFor="let unit of roster?.units">
+            {{ unit }}
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
   </ion-grid>
 </ion-content>
