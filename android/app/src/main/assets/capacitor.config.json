@@ -1,0 +1,7 @@
+{
+  "appId": "uk.co.jonathanrobbins.legion",
+  "appName": "Legion",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

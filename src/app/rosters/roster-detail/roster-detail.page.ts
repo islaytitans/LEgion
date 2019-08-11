@@ -22,6 +22,7 @@ export class RosterDetailPage implements OnInit {
     this.activatedRoute.paramMap.subscribe(paramMap => {
       if (!paramMap.has('rosterId')) {
         console.log('No roster found for id');
+        this.router.navigate(['/rosters']);
         return;
       }
 

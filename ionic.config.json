@@ -1,5 +1,7 @@
 {
   "name": "Legion",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
