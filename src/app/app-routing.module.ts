@@ -16,6 +16,8 @@ const routes: Routes = [
       }
     ]
   },
+  { path: 'units', loadChildren: './units/units.module#UnitsPageModule' },
+  { path: 'unit-detail', loadChildren: './units/unit-detail/unit-detail.module#UnitDetailPageModule' },
 ];
 
 @NgModule({
