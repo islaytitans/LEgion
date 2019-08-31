@@ -39,6 +39,6 @@ export class RosterService {
   deleteRoster(rosterId: number) {
     this.rosters = this.rosters.filter(roster => {
       return roster.id !== rosterId;
-    })
+    });
   }
 }
